@@ -35,6 +35,9 @@ searchBtn.addEventListener("click", () => {
           <ul>
           ${ingredientList}
           </ul>
+          <br>
+          <p class="text-center">Cooking Time: <b> ${recipe.readyInMinutes} </b>minutes</p>
+          <p class="text-center">Servings: <b>${recipe.servings} </b></p>
           </div>
           <div id="recipe">
               <button class="hide-recipe">X</button>
