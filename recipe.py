@@ -10,10 +10,10 @@ CORS(app)  # Apply CORS to the entire Flask application
 
 
 # API key for Spoonacular
-api_key = "ae7bc690ee424e17800999e4693a4b97"
+api_key = "YOUR_API_KEY"
 
 def fetch_recipe_ids_by_ingredients(ingredients):
-    url = f"https://api.spoonacular.com/recipes/findByIngredients?ingredients={','.join(ingredients)}&apiKey={api_key}&number=2"
+    url = f"https://api.spoonacular.com/recipes/findByIngredients?ingredients={','.join(ingredients)}&apiKey={api_key}&number=12"
     try:
         response = requests.get(url)
         if response.status_code == 200:
